@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Spotify</title>
+</head>
+<body>
+    <h2>MusicList:</h2>
+    <ul>
+        {%for obj in objs %}
+           <li><h2><a href="{% url 'music_detail' obj.id %}">{{ obj.name }}</a></h2></li>
+        {%endfor%}
+    </ul>
+</body>
+</html>
